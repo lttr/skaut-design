@@ -1,19 +1,74 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>skaut-design</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon16.png" />
 
-<body>
-  <h1>skaut-design</h1>
+    <!-- from https://cdn.skauting.cz/css/style.css -->
+    <link rel="stylesheet" href="css/fonts.css" />
 
-  <main></main>
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <script src="script.js"></script>
-</body>
+    <title>skaut-design</title>
+  </head>
 
+  <body>
+    <h1>skaut-design</h1>
+
+    <section>
+      <h1>Nadpis velikosti H1</h1>
+      <h2>Nadpis velikosti H2</h2>
+      <h3>Nadpis velikosti H3</h3>
+      <h4>Nadpis velikosti H4</h4>
+      <h5>Nadpis velikosti H5</h5>
+      <h6>Nadpis velikosti H6</h6>
+      <p>
+        Odstavec běžného textu. Odstavec běžného textu lze <b>dostylovat</b> příslušnými tagy přímo
+        <i>pro daná slova, spojení či věty</i>.
+      </p>
+      <p class="italic">Odstavec běžného textu, který je kurzívou.</p>
+      <p class="bold">Odstavec běžného textu, který je tučně.</p>
+      <p class="bold italic">Odstavec běžného textu, který je tučnou kurzívou.</p>
+    </section>
+
+    <section>
+      <h1 class="title">
+        Bulma
+      </h1>
+
+      <p class="subtitle">
+        Modern CSS framework based on
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"
+          >Flexbox</a
+        >
+      </p>
+
+      <div class="field">
+        <div class="control">
+          <input class="input" type="text" placeholder="Input" />
+        </div>
+      </div>
+
+      <div class="field">
+        <p class="control">
+          <span class="select">
+            <select>
+              <option>Select dropdown</option>
+            </select>
+          </span>
+        </p>
+      </div>
+
+      <div class="buttons">
+        <a class="button is-primary">Primary</a>
+        <a class="button is-link">Link</a>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
 </html>
