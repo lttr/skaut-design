@@ -1,0 +1,17 @@
+{
+  "name": "skaut-design",
+  "version": "1.0.0",
+  "description": "Simple design system for czech scouts",
+  "main": "script.js",
+  "author": "Lukas Trumm",
+  "license": "MIT",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/main.scss css/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "devDependencies": {
+    "bulma": "^0.7.5",
+    "node-sass": "^4.12.0"
+  }
+}
