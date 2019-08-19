@@ -13,77 +13,68 @@
   </head>
 
   <body>
-    <h1 class="has-text-centered">Skaut design</h1>
+    <section class="section">
+      <h1 class="title is-1 has-text-centered">Skaut design</h1>
+    </section>
 
     <section class="section">
       <div class="container">
-        <h2 class="has-text-centered">Typografie</h2>
+        <h2 class="title is-2 has-text-centered">Typografie</h2>
 
-        <h1>Nadpis velikosti H1</h1>
-        <h2>Nadpis velikosti H2</h2>
-        <h3>Nadpis velikosti H3</h3>
-        <h4>Nadpis velikosti H4</h4>
-        <h5>Nadpis velikosti H5</h5>
-        <h6>Nadpis velikosti H6</h6>
+        <h1 class="title is-1">Nadpis velikosti h1</h1>
+        <h2 class="title is-2">Nadpis velikosti h2</h2>
+        <h3 class="title is-3">Nadpis velikosti h3</h3>
+        <h4 class="title is-4">Nadpis velikosti h4</h4>
+        <h5 class="title is-5">Nadpis velikosti h5</h5>
+        <h6 class="title is-6">Nadpis velikosti h6</h6>
         <p>
           Odstavec běžného textu. Odstavec běžného textu lze <b>dostylovat</b> příslušnými tagy
           přímo <i>pro daná slova, spojení či věty</i>.
         </p>
-        <p class="italic">Odstavec běžného textu, který je kurzívou.</p>
-        <p class="bold">Odstavec běžného textu, který je tučně.</p>
-        <p class="bold italic">Odstavec běžného textu, který je tučnou kurzívou.</p>
+        <p class="is-italic">Odstavec běžného textu, který je kurzívou.</p>
+        <p class="has-text-weight-bold">Odstavec běžného textu, který je tučně.</p>
+        <p class="has-text-weight-bold is-italic">
+          Odstavec běžného textu, který je tučnou kurzívou.
+        </p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h2 class="has-text-centered">Seznamy</h2>
+        <h2 class="title is-2 has-text-centered">Seznamy</h2>
 
-        <div class="content is-medium">
-          <div class="heading">S sebou</div>
+        <div class="content">
+          <p>S sebou</p>
           <ul>
             <li>Ešus</li>
             <li>Lžíce</li>
             <li>Spacák</li>
             <li>Pití</li>
           </ul>
+          <p>Pracovní postup</p>
+          <ol>
+            <li>Ešus</li>
+            <li>Lžíce</li>
+            <li>Spacák</li>
+            <li>Pití</li>
+          </ol>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <h1 class="title">
-        Bulma
-      </h1>
+      <h2 class="title is-2 has-text-centered">Media objekt a box</h2>
 
-      <p class="subtitle">
-        Modern CSS framework based on
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"
-          >Flexbox</a
-        >
-      </p>
-
-      <div class="field">
-        <div class="control">
-          <input class="input" type="text" placeholder="Input" />
+      <article class="media box">
+        <div class="media-content">
+          <p>Vpravo je symbol</p>
         </div>
-      </div>
-
-      <div class="field">
-        <p class="control">
-          <span class="select">
-            <select>
-              <option>Select dropdown</option>
-            </select>
-          </span>
-        </p>
-      </div>
-
-      <div class="buttons">
-        <a class="button is-primary">Primary</a>
-        <a class="button is-link">Link</a>
-      </div>
+        <figure class="media-right">
+          <p class="image is-128x128">
+            <img src="/img/SKAUT_kompas_symbol.svg" width="128" height="128" />
+          </p>
+        </figure>
+      </article>
     </section>
 
     <script src="script.js"></script>
