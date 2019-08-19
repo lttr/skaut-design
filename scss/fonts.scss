@@ -1,5 +1,5 @@
-@charset "utf-8";
-/* CSS Document */
+/* based on https://cdn.skauting.cz/css/style.css */
+
 @font-face {
   font-family: 'themix';
   src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400.eot');
@@ -59,69 +59,4 @@
     url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.svg#skautbold') format('svg');
   font-weight: normal;
   font-style: normal;
-}
-
-body {
-  font-family: themix, sans-serif;
-  color: #00395b;
-}
-
-h1 {
-  font-family: skautbold, sans-serif;
-  font-weight: normal;
-  font-size: 35px;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 30px;
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 25px;
-}
-
-h4 {
-  font-weight: 700;
-  font-style: italic;
-  font-size: 25px;
-}
-
-h5 {
-  font-weight: 700;
-  font-size: 17px;
-}
-
-h6 {
-  font-weight: 700;
-  font-style: italic;
-  font-size: 17px;
-}
-
-p {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 17px;
-}
-
-b {
-  font-weight: 700;
-}
-
-i {
-  font-style: italic;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.uvodlogo {
-  max-height: 200px;
-  min-height: 70px;
 }

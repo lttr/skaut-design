@@ -1,0 +1,53 @@
+// Set your brand colors
+$blue: #3978b8;
+$orange: #f99d1c;
+$green: #416426;
+$purple: #a27996;
+$brown: #855a14;
+$red: #f26854;
+
+$primary: #2f3a4b;
+$info: $blue;
+$success: $green;
+$warning: $orange;
+$danger: $red;
+$light: #eff3f6;
+$dark: $primary;
+$text: $primary;
+$link: $blue;
+$link-visited: $blue;
+$link-focus: $blue;
+$link-hover: $blue;
+$link-active: $blue;
+
+$family-primary: 'themix', sans-serif;
+$family-secondary: 'skautbold', sans-serif;
+
+// Update Bulma's global variables
+$body-family: $family-primary;
+$body-color: $primary;
+$title-color: $primary;
+
+// $grey-dark: $brown;
+// $grey-light: $beige-light;
+// $primary: $purple;
+// $link: $pink;
+// $widescreen-enabled: false;
+// $fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+// $body-background-color: $beige-lighter;
+// $control-border-width: 2px;
+// $input-border-color: transparent;
+// $input-shadow: none;
+
+// Sizes
+$size-1: 2.2rem;
+$size-2: 1.875rem;
+$size-3: 1.56rem;
+$size-4: 1.56rem;
+$size-5: 1.06rem;
+$size-6: 1.06rem;
+$size-7: 0.75rem;
+
+$title-weight: ;
