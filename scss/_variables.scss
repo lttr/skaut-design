@@ -1,0 +1,212 @@
+//
+// Initial variables
+//
+
+// Colors
+
+$black: hsl(0, 0%, 4%);
+$black-bis: hsl(0, 0%, 7%);
+$black-ter: hsl(0, 0%, 14%);
+
+$grey-darker: hsl(0, 0%, 21%);
+$grey-dark: hsl(0, 0%, 29%);
+$grey: hsl(0, 0%, 48%);
+$grey-light: hsl(0, 0%, 71%);
+$grey-lighter: hsl(0, 0%, 86%);
+
+$white-ter: hsl(0, 0%, 96%);
+$white-bis: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+// Warm colors (Skaut graphics manual)
+$orange: hsl(35, 83%, 57%); // #eca038
+$brown: hsl(36, 31%, 49%); // #a38456
+$green: hsl(144, 100%, 27%); // #008836
+$blue-sky: hsl(206, 28%, 95%); // #eff3f6
+$blue-light: hsl(213, 47%, 61%); // #6b96ca
+$blue-dark: hsl(207, 66%, 37%); // #20649b
+$blue-deep: hsl(216, 23%, 24%); // #2f3a4b
+$purple: hsl(327, 21%, 57%); // #a87a93
+$red-light: hsl(9, 79%, 60%); // #ea614a
+$pink: hsl(7, 39%, 70%); // #d19c95
+
+// skaut.cz
+// $orange: #f99d1c;
+// $green: #416426;
+// $cyan: #209cee;
+// $blue: #3978b8;
+// $purple: #a27996;
+// $red: #f26854;
+// $brown: #855a14;
+// $background: #eff3f6;
+// $text: #2f3a4b;
+
+// Typography
+
+$family-sans-serif: 'themix', sans-serif;
+$family-serif: 'skautbold', serif;
+$family-monospace: monospace;
+$render-mode: optimizeLegibility;
+
+$size-1: 2.2rem;
+$size-2: 1.875rem;
+$size-3: 1.56rem;
+$size-4: 1.56rem;
+$size-5: 1.06rem;
+$size-6: 1.06rem;
+$size-7: 0.75rem;
+
+$weight-light: 300;
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+
+// Spacing
+
+$block-spacing: 1.5rem;
+
+// Responsiveness
+
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 32px;
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px;
+// 960px container + 4rem
+$desktop: 960px + (2 * $gap);
+// 1152px container + 4rem
+$widescreen: 1152px + (2 * $gap);
+$widescreen-enabled: true;
+// 1344px container + 4rem
+$fullhd: 1344px + (2 * $gap);
+$fullhd-enabled: true;
+
+// Miscellaneous
+
+$easing: 'ease-out';
+$radius-small: 2px;
+$radius: 4px;
+$radius-large: 6px;
+$radius-rounded: 290486px;
+$speed: 86ms;
+
+// Flags
+
+$variable-columns: true;
+
+//
+// Derived variables
+//
+
+$primary: $blue-deep;
+$info: $blue-light;
+$success: $green;
+$warning: $orange;
+$danger: $red-light;
+$light: $blue-sky;
+$dark: $blue-deep;
+
+// Invert colors
+
+$orange-invert: findColorInvert($orange);
+$brown-invert: findColorInvert($brown);
+$green-invert: findColorInvert($green);
+$blue-light-invert: findColorInvert($blue-light);
+$blue-dark-invert: findColorInvert($blue-dark);
+$blue-deep-invert: findColorInvert($blue-deep);
+$purple-invert: findColorInvert($purple);
+$red-light-invert: findColorInvert($red-light);
+$pink-invert: findColorInvert($pink);
+
+$primary-invert: $blue-deep-invert;
+$info-invert: $blue-light-invert;
+$success-invert: $green-invert;
+$warning-invert: $orange-invert;
+$danger-invert: $red-light-invert;
+$light-invert: $dark;
+$dark-invert: $light;
+
+// General colors
+
+$background: $white-ter;
+
+$border: $grey-lighter;
+$border-hover: $grey-light;
+
+// Text colors
+
+$text: $primary;
+$text-invert: findColorInvert($text);
+$text-light: $grey;
+$text-strong: $grey-darker;
+
+// Code colors
+
+$code: $red-light;
+$code-background: $background;
+
+$pre: $text;
+$pre-background: $background;
+
+// Link colors
+
+$link: $blue-light;
+$link-invert: $blue-light-invert;
+$link-visited: $purple;
+
+$link-hover: $grey-darker;
+$link-hover-border: $grey-light;
+
+$link-focus: $grey-darker;
+$link-focus-border: $blue-light;
+
+$link-active: $grey-darker;
+$link-active-border: $grey-dark;
+
+// Typography
+
+$family-primary: $family-sans-serif;
+$family-secondary: $family-serif;
+$family-code: $family-monospace;
+
+$size-small: $size-7;
+$size-normal: $size-6;
+$size-medium: $size-5;
+$size-large: $size-4;
+
+// Lists and maps
+$custom-colors: null;
+$custom-shades: null;
+
+//
+// Generic variables
+//
+
+$body-background-color: $white;
+$body-size: 17px;
+$body-min-width: 320px;
+$body-rendering: optimizeLegibility;
+$body-family: $family-sans-serif;
+$body-overflow-x: hidden;
+$body-overflow-y: scroll;
+$body-color: $text;
+$body-font-size: 1em;
+$body-weight: $weight-normal;
+$body-line-height: 1.5;
+$small-font-size: 0.875em;
+$hr-background-color: $background;
+$hr-height: 2px;
+$hr-margin: 1.5rem 0;
+$strong-color: $text-strong;
+$strong-weight: $weight-bold;
+$pre-font-size: 0.875em;
+$pre-padding: 1.25rem 1.5rem;
+$pre-code-font-size: 1em;
+
+//
+// Footer
+//
+
+$footer-background-color: $light;
+
+$footer-padding: 3rem 1.5rem 6rem;

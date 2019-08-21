@@ -1,10 +1,11 @@
 @charset "utf-8";
 
-@import './variables.scss';
-@import './fonts.scss';
-@import './general.scss';
+@import '../node_modules/bulma/sass/utilities/functions.sass';
+@import 'variables';
+@import 'fonts';
+@import 'general';
 
 // bulma
 @import '../node_modules/bulma/bulma.sass';
 
-@import './overwrites.scss';
+@import 'specifics';
