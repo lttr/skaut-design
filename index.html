@@ -90,6 +90,52 @@
       </article>
     </section>
 
+    <section class="section">
+      <h2 class="title is-2 has-text-centered">Formulář</h2>
+
+      <div>
+        <form>
+          <h3 class="title is-3">Napište</h3>
+          <div class="">
+            <div class="field">
+              <label for="username" class="label is-medium">Vaše jméno</label>
+              <div class="control">
+                <input required type="text" name="username" class="input is-medium" value="" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="email" class="label is-medium">Email</label>
+              <div class="control">
+                <input required type="email" name="email" class="input is-medium" value="" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="checkbox" class="label is-medium">Je to tak?</label>
+              <div class="control">
+                <input
+                  required
+                  type="checkbox"
+                  name="checkbox"
+                  class="checkbox is-medium"
+                  checked
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label for="textarea" class="label is-medium">Zpráva</label>
+              <div class="control">
+                <textarea
+                  name="textarea"
+                  class="textarea is-medium"
+                  placeholder="e.g. Vaše zpráva"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
