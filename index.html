@@ -7,19 +7,63 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon16.png" />
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/skaut-design.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
 
-    <title>skaut-design</title>
+    <title>Skaut design</title>
   </head>
 
-  <body>
+  <body class="sk-clip-path">
+    <nav class="navbar is-family-secondary">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="/" class="navbar-item is-paddingless">
+            <img src="/img/logo/SKAUT_horizontalni_logo.svg" width="150" height="65" />
+          </a>
+          <span class="navbar-burger burger" data-target="navbarTop">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </span>
+        </div>
+        <div class="navbar-menu" id="navbarTop">
+          <div class="navbar-end">
+            <a href="#Typografie" class="navbar-item sk-menu-item">Typografie</a>
+            <a href="#Odkazy" class="navbar-item sk-menu-item">Odkazy</a>
+            <a href="#Seznamy" class="navbar-item sk-menu-item">Seznamy</a>
+            <a href="#Media" class="navbar-item sk-menu-item">Boxy</a>
+            <a href="#Formular" class="navbar-item sk-menu-item">Formulář</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-medium">
+      <div class="hero-body backgrount-hero4">
+        <div class="container">
+          <div class="heading-background sk-centered">
+            <h1 class="title is-1">Skaut &nbsp;&nbsp;&nbsp;design</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section"></section>
+
     <section class="section">
-      <h1 class="title is-1 has-text-centered">Skaut design</h1>
+      <div class="container">
+        <i>Co to je</i>
+      </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h2 class="title is-2 has-text-centered">Typografie</h2>
+        <i>Jak to pouzit</i>
+      </div>
+    </section>
+
+    <section class="section" id="Typografie">
+      <div class="container">
+        <h2 class="title is-2 has-text-centered sk-underline is-orange">Typografie</h2>
 
         <h1 class="title is-1">Nadpis velikosti h1</h1>
         <h2 class="title is-2">Nadpis velikosti h2</h2>
@@ -36,103 +80,136 @@
         <p class="has-text-weight-bold is-italic">
           Odstavec běžného textu, který je tučnou kurzívou.
         </p>
+        <p class="has-text-grey-light">
+          Méně významný text
+        </p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="Odkazy">
       <div class="container">
-        <h2 class="title is-2 has-text-centered">Odkazy a tlačítka</h2>
-
-        <a href="#">Více &gt;</a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="title is-2 has-text-centered">Seznamy</h2>
+        <h2 class="title is-2 has-text-centered sk-underline is-green">Odkazy a tlačítka</h2>
 
         <div class="content">
-          <p>S sebou</p>
-          <ul>
-            <li>Ešus</li>
-            <li>Lžíce</li>
-            <li>Spacák</li>
-            <li>Pití</li>
-          </ul>
-          <p>Pracovní postup</p>
-          <ol>
-            <li>Ešus</li>
-            <li>Lžíce</li>
-            <li>Spacák</li>
-            <li>Pití</li>
-          </ol>
+          <div class="columns is-centered">
+            <p class="column is-narrow">
+              Text <a href="#">text</a> text<br />
+              <a href="#">Více &gt;</a>
+            </p>
+            <p class="column is-narrow">
+              <button class="button is-primary">Odeslat</button>
+            </p>
+            <p class="column is-narrow">
+              <button class="button is-link">Přejít do e-shopu&nbsp;&nbsp;&gt;</button>
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2 class="title is-2 has-text-centered">Media objekt a box</h2>
+    <section class="section" id="Seznamy">
+      <div class="container">
+        <h2 class="title is-2 has-text-centered sk-underline is-blue">Seznamy</h2>
 
-      <article class="media box">
-        <div class="media-content">
-          <p>
-            Tábor je pro děti od začátku jedno velké dobrodružství. Objevují bydlení ve stanu, hry,
-            sportování, koupání, vaření, pobyt v přírodě, jízdu na koni i výlety do okolí. Starší a
-            zkušenější pomáhají nováčkům zvyknout si na táborový život. Právě na skautských táborech
-            při společných zážitcích vznikají pevná přátelství na celý život.
-          </p>
-        </div>
-        <figure class="media-right">
-          <p class="image is-128x128">
-            <img src="./img/SKAUT_stan4_symbol.svg" width="128" height="128" />
-          </p>
-        </figure>
-      </article>
-    </section>
-
-    <section class="section">
-      <h2 class="title is-2 has-text-centered">Formulář</h2>
-
-      <div>
-        <form>
-          <h3 class="title is-3">Napište</h3>
-          <div class="">
-            <div class="field">
-              <label for="username" class="label is-medium">Vaše jméno</label>
-              <div class="control">
-                <input required type="text" name="username" class="input is-medium" value="" />
-              </div>
-            </div>
-            <div class="field">
-              <label for="email" class="label is-medium">Email</label>
-              <div class="control">
-                <input required type="email" name="email" class="input is-medium" value="" />
-              </div>
-            </div>
-            <div class="field">
-              <label for="checkbox" class="label is-medium">Je to tak?</label>
-              <div class="control">
-                <input
-                  required
-                  type="checkbox"
-                  name="checkbox"
-                  class="checkbox is-medium"
-                  checked
-                />
-              </div>
-            </div>
-            <div class="field">
-              <label for="textarea" class="label is-medium">Zpráva</label>
-              <div class="control">
-                <textarea
-                  name="textarea"
-                  class="textarea is-medium"
-                  placeholder="e.g. Vaše zpráva"
-                ></textarea>
-              </div>
+        <div class="columns">
+          <div class="column">
+            <div class="content">
+              <p>S sebou</p>
+              <ul>
+                <li>Ešus</li>
+                <li>Lžíce</li>
+                <li>Spacák</li>
+                <li>Pití</li>
+              </ul>
             </div>
           </div>
-        </form>
+          <div class="column">
+            <div class="content">
+              <p>Pracovní postup</p>
+              <ol>
+                <li>Ešus</li>
+                <li>Lžíce</li>
+                <li>Spacák</li>
+                <li>Pití</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="Media">
+      <div class="container">
+        <h2 class="title is-2 has-text-centered sk-underline is-orange">Media objekt a box</h2>
+
+        <div class="columns is-centered">
+          <div class="column is-two-thirds-desktop">
+            <article class="media box has-background-light">
+              <div class="media-content">
+                <p>
+                  Tábor je pro děti od začátku jedno velké dobrodružství. Objevují bydlení ve stanu,
+                  hry, sportování, koupání, vaření, pobyt v přírodě, jízdu na koni i výlety do
+                  okolí. Starší a zkušenější pomáhají nováčkům zvyknout si na táborový život. Právě
+                  na skautských táborech při společných zážitcích vznikají pevná přátelství na celý
+                  život.
+                </p>
+              </div>
+              <figure class="media-right">
+                <div class="image is-128x128">
+                  <img src="./img/shapes/SKAUT_stan4_symbol.svg" width="128" height="128" />
+                </div>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="Formular">
+      <div class="container">
+        <h2 class="title is-2 has-text-centered sk-underline is-green">Formulář</h2>
+
+        <div class="columns">
+          <form class="column is-half-tablet is-one-quarter-fullhd">
+            <h3 class="title is-3">Napište</h3>
+            <div class="">
+              <div class="field">
+                <label for="username" class="label is-medium">Vaše jméno</label>
+                <div class="control">
+                  <input required type="text" name="username" class="input is-medium" value="" />
+                </div>
+              </div>
+              <div class="field">
+                <label for="email" class="label is-medium">Email</label>
+                <div class="control">
+                  <input required type="email" name="email" class="input is-medium" value="" />
+                </div>
+              </div>
+              <div class="field">
+                <label for="checkbox" class="label is-medium">Je to tak?</label>
+                <div class="control">
+                  <input
+                    required
+                    type="checkbox"
+                    name="checkbox"
+                    class="checkbox is-medium"
+                    checked
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label for="textarea" class="label is-medium">Zpráva</label>
+                <div class="control">
+                  <textarea
+                    name="textarea"
+                    class="textarea is-medium"
+                    placeholder="e.g. Vaše zpráva"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -143,6 +220,45 @@
         </p>
       </div>
     </footer>
+
+    <div class="sk-svg__outer">
+      <div class="sk-svg__wrap">
+        <svg width="0" height="0">
+          <defs>
+            <clipPath id="celebrity__img">
+              <path
+                d="M225.517,214.435c-11.963,10.973 -27.672,17.246 -43.663,20.034c-15.994,2.788 -45.135,2.058 -61.37,2.058c-180.368,0 -108.583,-181.234 -94.887,-202.156c12.813,-19.577 37.316,-29.028 60.524,-31.993c23.207,-2.966 53.86,-3.132 76.42,3.064c95.564,26.247 87.888,107.5 89.031,123.787c2.152,30.67 -3.398,64.425 -26.055,85.206Z"
+              ></path>
+            </clipPath>
+            <clipPath id="celebrity__img__small">
+              <path
+                d="M170.033,162.832c-9.02,8.273 -20.864,13.003 -32.921,15.105c-12.059,2.102 -34.03,1.552 -46.271,1.552c-135.992,0 -81.868,-136.645 -71.542,-152.419c9.661,-14.761 28.136,-21.887 45.633,-24.122c17.498,-2.236 40.609,-2.362 57.619,2.31c72.052,19.79 66.265,81.051 67.126,93.331c1.623,23.124 -2.561,48.575 -19.644,64.243Z"
+              ></path>
+            </clipPath>
+            <clipPath id="img__1">
+              <path
+                d="M22.015,188.203c35.151,17.499 136.85,1.367 160.573,-7.843c17.458,-6.78 29.458,-17.808 36.75,-29.527c15.438,-24.819 24.693,-91.987 18.94,-119.497c-1.377,-6.595 -9.353,-20.749 -31.668,-23.8c-14.693,-2.012 -136.847,-16.221 -176.94,0.537c-35.746,14.941 -30.104,118.44 -28.095,136.242c2.034,18.042 8.847,38.118 20.44,43.888"
+              ></path>
+            </clipPath>
+            <clipPath id="img__2">
+              <path
+                d="M178.164,176.718c-37.266,14.737 -137.244,10.68 -169.297,-46.027c-27.616,-48.857 9.088,-134.847 112.732,-130.535c27.813,1.157 106.538,11.595 115.96,44.604c12.996,45.515 -29.242,120.032 -59.395,131.958"
+              ></path>
+            </clipPath>
+            <clipPath id="img__3">
+              <path
+                d="M120.548,193.803c59.658,-4.686 113.033,-37.993 119.064,-89.493c7.55,-64.443 -95.691,-138.363 -187.23,-87.237c-61.084,34.119 -63.912,95.16 -33.239,136.019c24.472,32.598 73.627,42.891 101.405,40.711"
+              ></path>
+            </clipPath>
+            <clipPath id="img__4">
+              <path
+                d="M183.417,6.898c-49.77,-11.772 -125.933,-8.706 -161.22,10.963c-7.844,4.376 -16.951,18.018 -19.868,29.938c-2.919,11.924 -2.849,24.458 -1.141,36.612c7.017,49.91 28.873,74.433 42.625,82.786c11.43,6.943 24.689,10.424 37.968,10.828c56.867,1.721 131.386,-5.411 149.099,-47.05c6.488,-15.25 15.291,-61.248 2.066,-87.494c-9.523,-18.899 -28.934,-31.712 -49.529,-36.583"
+              ></path>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

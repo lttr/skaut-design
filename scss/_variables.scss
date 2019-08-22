@@ -124,7 +124,7 @@ $success-invert: $green-invert;
 $warning-invert: $orange-invert;
 $danger-invert: $red-light-invert;
 $light-invert: $dark;
-$dark-invert: $light;
+$dark-invert: $white-bis;
 
 // General colors
 
@@ -150,17 +150,17 @@ $pre-background: $background;
 
 // Link colors
 
-$link: $blue-light;
+$link: $blue-dark;
 $link-invert: $blue-light-invert;
 $link-visited: $purple;
 
-$link-hover: $grey-darker;
+$link-hover: $text;
 $link-hover-border: $grey-light;
 
-$link-focus: $grey-darker;
-$link-focus-border: $blue-light;
+$link-focus: $text;
+$link-focus-border: $blue-dark;
 
-$link-active: $grey-darker;
+$link-active: $text;
 $link-active-border: $grey-dark;
 
 // Typography
@@ -204,6 +204,18 @@ $pre-padding: 1.25rem 1.5rem;
 $pre-code-font-size: 1em;
 
 //
+// Navbar
+//
+
+$navbar-height: 4rem;
+$navbar-item-img-max-height: 3.6rem;
+$navbar-item-color: $text;
+$navbar-background-color: $white;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-active-color: $info;
+$navbar-breakpoint: $desktop;
+
+//
 // Footer
 //
 
@@ -214,3 +226,7 @@ $footer-background-color: $light;
 //
 
 $label-color: $dark;
+
+//
+// Buttons
+//

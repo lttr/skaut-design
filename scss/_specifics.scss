@@ -8,3 +8,15 @@ h1 {
 h4 {
   font-style: italic;
 }
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbar a {
+  text-decoration: none;
+}

@@ -1,0 +1,63 @@
+@media (min-width: $navbar-breakpoint) {
+  .sk-menu-item:not(:nth-last-child(1)):after {
+    display: block;
+    position: absolute;
+    content: '';
+    right: -2px;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #c1cad0;
+  }
+}
+
+.sk-svg__outer {
+  position: relative;
+}
+
+.sk-svg__wrap {
+  position: absolute;
+  left: -2000em;
+}
+
+.sk-clip-path .sk-tile--4 {
+  clip-path: url(#img__4);
+}
+
+.sk-underline {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+@media (min-width: $tablet) {
+  .sk-underline {
+    padding-bottom: 27px;
+  }
+}
+
+.sk-underline::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 70px;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.sk-underline.has-text-centered::before {
+  margin-left: -35px;
+  left: 50%;
+}
+
+.sk-underline.is-blue::before {
+  background-color: $blue-dark;
+}
+
+.sk-underline.is-orange::before {
+  background-color: $orange;
+}
+
+.sk-underline.is-green::before {
+  background-color: $green;
+}

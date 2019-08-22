@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "serve": "browser-sync start --server --files . --no-notify --open .",
-    "css-build": "node-sass --omit-source-map-url scss/main.scss css/styles.css",
+    "css-build": "node-sass --omit-source-map-url scss/main.scss css/skaut-design.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "run-p css-watch serve"
   },
