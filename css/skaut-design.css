@@ -4151,7 +4151,7 @@ a.list-item {
 
 .navbar {
   background-color: white;
-  min-height: 4rem;
+  min-height: 5rem;
   position: relative;
   z-index: 30; }
   .navbar.is-white {
@@ -4607,7 +4607,7 @@ a.list-item {
   .navbar > .container {
     align-items: stretch;
     display: flex;
-    min-height: 4rem;
+    min-height: 5rem;
     width: 100%; }
   .navbar.has-shadow {
     box-shadow: 0 2px 0 0 whitesmoke; }
@@ -4625,18 +4625,18 @@ a.list-item {
 
 html.has-navbar-fixed-top,
 body.has-navbar-fixed-top {
-  padding-top: 4rem; }
+  padding-top: 5rem; }
 
 html.has-navbar-fixed-bottom,
 body.has-navbar-fixed-bottom {
-  padding-bottom: 4rem; }
+  padding-bottom: 5rem; }
 
 .navbar-brand,
 .navbar-tabs {
   align-items: stretch;
   display: flex;
   flex-shrink: 0;
-  min-height: 4rem; }
+  min-height: 5rem; }
 
 .navbar-brand a.navbar-item:focus, .navbar-brand a.navbar-item:hover {
   background-color: transparent; }
@@ -4651,9 +4651,9 @@ body.has-navbar-fixed-bottom {
   color: #2f3a4b;
   cursor: pointer;
   display: block;
-  height: 4rem;
+  height: 5rem;
   position: relative;
-  width: 4rem;
+  width: 5rem;
   margin-left: auto; }
   .navbar-burger span {
     background-color: currentColor;
@@ -4712,7 +4712,7 @@ a.navbar-item,
   flex-grow: 0;
   flex-shrink: 0; }
   .navbar-item img {
-    max-height: 3.6rem; }
+    max-height: 4.6rem; }
   .navbar-item.has-dropdown {
     padding: 0; }
   .navbar-item.is-expanded {
@@ -4720,7 +4720,7 @@ a.navbar-item,
     flex-shrink: 1; }
   .navbar-item.is-tab {
     border-bottom: 1px solid transparent;
-    min-height: 4rem;
+    min-height: 5rem;
     padding-bottom: calc(0.5rem - 1px); }
     .navbar-item.is-tab:focus, .navbar-item.is-tab:hover {
       background-color: transparent;
@@ -4787,14 +4787,14 @@ a.navbar-item,
     top: 0; }
   .navbar.is-fixed-top .navbar-menu, .navbar.is-fixed-top-touch .navbar-menu {
     -webkit-overflow-scrolling: touch;
-    max-height: calc(100vh - 4rem);
+    max-height: calc(100vh - 5rem);
     overflow: auto; }
   html.has-navbar-fixed-top-touch,
   body.has-navbar-fixed-top-touch {
-    padding-top: 4rem; }
+    padding-top: 5rem; }
   html.has-navbar-fixed-bottom-touch,
   body.has-navbar-fixed-bottom-touch {
-    padding-bottom: 4rem; } }
+    padding-bottom: 5rem; } }
 
 @media screen and (min-width: 1024px) {
   .navbar,
@@ -4804,7 +4804,7 @@ a.navbar-item,
     align-items: stretch;
     display: flex; }
   .navbar {
-    min-height: 4rem; }
+    min-height: 5rem; }
     .navbar.is-spaced {
       padding: 1rem 2rem; }
       .navbar.is-spaced .navbar-start,
@@ -4919,16 +4919,16 @@ a.navbar-item,
     top: 0; }
   html.has-navbar-fixed-top-desktop,
   body.has-navbar-fixed-top-desktop {
-    padding-top: 4rem; }
+    padding-top: 5rem; }
   html.has-navbar-fixed-bottom-desktop,
   body.has-navbar-fixed-bottom-desktop {
-    padding-bottom: 4rem; }
+    padding-bottom: 5rem; }
   html.has-spaced-navbar-fixed-top,
   body.has-spaced-navbar-fixed-top {
-    padding-top: 6rem; }
+    padding-top: 7rem; }
   html.has-spaced-navbar-fixed-bottom,
   body.has-spaced-navbar-fixed-bottom {
-    padding-bottom: 6rem; }
+    padding-bottom: 7rem; }
   a.navbar-item.is-active,
   .navbar-link.is-active {
     color: #6d97ca; }
@@ -4939,7 +4939,7 @@ a.navbar-item,
     background-color: transparent; } }
 
 .hero.is-fullheight-with-navbar {
-  min-height: calc(100vh - 4rem); }
+  min-height: calc(100vh - 5rem); }
 
 .pagination {
   font-size: 1.06rem;
@@ -6998,6 +6998,7 @@ label.panel-block {
   font-style: normal; }
 
 /* based on https://cdn.skauting.cz/css/style.css */
+/* headings with specific fonts */
 h1 {
   font-family: "skautbold", serif;
   font-weight: normal !important; }
@@ -7005,6 +7006,7 @@ h1 {
 h4 {
   font-style: italic; }
 
+/* invert underline style links */
 a {
   text-decoration: underline; }
 
@@ -7013,6 +7015,35 @@ a:hover {
 
 .navbar a {
   text-decoration: none; }
+
+.pagination a {
+  text-decoration: none; }
+
+/* specific navbar logo height */
+.navbar-brand img {
+  height: 4.6rem; }
+
+/* bigger navbar hamburger */
+.navbar-burger span {
+  height: 2px;
+  border-radius: 2px;
+  width: 24px;
+  left: calc(50% - 12px); }
+
+.navbar-burger span:nth-child(1) {
+  top: calc(50% - 7px); }
+
+.navbar-burger span:nth-child(2) {
+  top: calc(50%); }
+
+.navbar-burger span:nth-child(3) {
+  top: calc(50% + 7px); }
+
+.navbar-burger.is-active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg); }
+
+.navbar-burger.is-active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg); }
 
 @media (min-width: 1024px) {
   .sk-menu-item:not(:nth-last-child(1)):after {
@@ -7024,7 +7055,7 @@ a:hover {
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: #c1cad0; } }
+    background-color: #c2cbd1; } }
 
 .sk-svg__outer {
   position: relative; }

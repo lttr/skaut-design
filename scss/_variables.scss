@@ -26,6 +26,7 @@ $blue-sky: hsl(206, 28%, 95%); // #eff3f6
 $blue-light: hsl(213, 47%, 61%); // #6b96ca
 $blue-dark: hsl(207, 66%, 37%); // #20649b
 $blue-deep: hsl(216, 23%, 24%); // #2f3a4b
+$blue-grey: hsl(204, 14%, 79%); // #c1cad0
 $purple: hsl(327, 21%, 57%); // #a87a93
 $red-light: hsl(9, 79%, 60%); // #ea614a
 $pink: hsl(7, 39%, 70%); // #d19c95
@@ -39,6 +40,7 @@ $pink: hsl(7, 39%, 70%); // #d19c95
 // $red: #f26854;
 // $brown: #855a14;
 // $background: #eff3f6;
+// $grey: #c1cad0;
 // $text: #2f3a4b;
 
 // Typography
@@ -207,8 +209,8 @@ $pre-code-font-size: 1em;
 // Navbar
 //
 
-$navbar-height: 4rem;
-$navbar-item-img-max-height: 3.6rem;
+$navbar-height: 5rem;
+$navbar-item-img-max-height: 4.6rem;
 $navbar-item-color: $text;
 $navbar-background-color: $white;
 $navbar-item-hover-background-color: transparent;

@@ -1,5 +1,7 @@
 /* based on https://cdn.skauting.cz/css/style.css */
 
+/* headings with specific fonts */
+
 h1 {
   font-family: $family-secondary;
   font-weight: normal !important;
@@ -8,6 +10,8 @@ h1 {
 h4 {
   font-style: italic;
 }
+
+/* invert underline style links */
 
 a {
   text-decoration: underline;
@@ -19,4 +23,43 @@ a:hover {
 
 .navbar a {
   text-decoration: none;
+}
+
+.pagination a {
+  text-decoration: none;
+}
+
+/* specific navbar logo height */
+
+.navbar-brand img {
+  height: $navbar-item-img-max-height;
+}
+
+/* bigger navbar hamburger */
+
+.navbar-burger span {
+  height: 2px;
+  border-radius: 2px;
+  width: 24px;
+  left: calc(50% - 12px);
+}
+
+.navbar-burger span:nth-child(1) {
+  top: calc(50% - 7px);
+}
+
+.navbar-burger span:nth-child(2) {
+  top: calc(50%);
+}
+
+.navbar-burger span:nth-child(3) {
+  top: calc(50% + 7px);
+}
+
+.navbar-burger.is-active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-burger.is-active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
