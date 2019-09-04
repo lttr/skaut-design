@@ -1,5 +1,5 @@
 .background-hero4 {
-  background-image: url('/img/examples/hero4.jpg');
+  background-image: url('img/examples/hero4.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
   bottom: 1em;
   width: 16em;
   height: 12em;
-  background-image: url('/img/shapes/oval.svg');
+  background-image: url('img/shapes/oval.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
