@@ -6,6 +6,7 @@
   "author": "Lukas Trumm",
   "license": "MIT",
   "scripts": {
+    "preversion": "npm run build:css",
     "sass:css": "node-sass --omit-source-map-url scss/main.scss css/skaut-design.css",
     "optimize:css": "cleancss -o css/skaut-design.min.css css/skaut-design.css",
     "build:css": "run-s -l sass:css optimize:css",
