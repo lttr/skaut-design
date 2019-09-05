@@ -33,6 +33,7 @@
             <a href="#Seznamy" class="navbar-item sk-menu-item">Seznamy</a>
             <a href="#Media" class="navbar-item sk-menu-item">Boxy</a>
             <a href="#Formular" class="navbar-item sk-menu-item">Formulář</a>
+            <a href="#Tabulka" class="navbar-item sk-menu-item">Tabulka</a>
           </div>
         </div>
       </div>
@@ -211,6 +212,39 @@
               </div>
             </form>
           </div>
+        </div>
+      </section>
+
+      <section class="section" id="Tabulka">
+        <div class="container">
+          <h2 class="title is-2 has-text-centered sk-underline is-blue">Tabulka a taby</h2>
+
+          <div class="tabs is-toggle is-centered">
+            <ul>
+              <li id="tab-trips" class="is-active">
+                <a>Výpravy</a>
+              </li>
+              <li id="tab-meetings" class="">
+                <a>Schůzky</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-narrow">
+              <table class="table is-striped">
+                <thead>
+                  <tr>
+                    <th>Termín</th>
+                    <th>Akce</th>
+                  </tr>
+                </thead>
+                <tbody id="calendar-body"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="columns"></div>
         </div>
       </section>
     </main>

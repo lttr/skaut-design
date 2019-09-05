@@ -7019,6 +7019,9 @@ a:hover {
 .pagination a {
   text-decoration: none; }
 
+.tabs a {
+  text-decoration: none; }
+
 /* specific navbar logo height */
 .navbar-brand img {
   height: 4.6rem; }
