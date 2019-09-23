@@ -1,6 +1,6 @@
 {
   "name": "@lttr/skaut-design",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Simple design system for czech scouts",
   "main": "script.js",
   "author": "Lukas Trumm",
