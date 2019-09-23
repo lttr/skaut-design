@@ -7022,6 +7022,9 @@ a:hover {
 .tabs a {
   text-decoration: none; }
 
+a.button {
+  text-decoration: none; }
+
 /* specific navbar logo height */
 .navbar-brand img {
   height: 4.6rem; }
